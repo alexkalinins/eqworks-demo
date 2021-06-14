@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("/fonts/MonumentExtended/MonumentExtended-Black.ttf");
+  font-style: black;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("/fonts/MonumentExtended/MonumentExtended-Regular.ttf");
+  font-style: regular;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("/fonts/MonumentExtended/MonumentExtended-Light.ttf");
+  font-style: light;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AkzidenzGrotesk";
+  src: url("/fonts/AkzidenzGrotesk/Akzidenz-grotesk-roman.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AkzidenzGrotesk";
+  src: url("/fonts/AkzidenzGrotesk/Akzidenz-grotesk-bold.ttf");
+  font-style: bold;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AkzidenzGrotesk";
+  src: url("/fonts/AkzidenzGrotesk/Akzidenz-grotesk-black.ttf");
+  font-style: black;
+  font-weight: 800;
+  font-display: swap;
+}
+
+body {
+  font-family: "AkzidenzGrotesk";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "MonumentExtended";
+  font-weight: 400;
+}
+
+button{
+  background-color:white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: .5rem;
+}
+button:hover {
+  transform: scale(1.05);
+
+}
+
+.subtitle{
+  font-family: "AkzidenzGrotesk";
+  font-weight: 800;
+  font-size: .75rem;
+
+  color: gray;
+}
+
+.welcome {
+  font-family: "MonumentExtended";
+  font-weight: 800 !important;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    span {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    span:hover,
+    span:focus {
+      transform: scale(1.05);
+    }
+
+    .active {
+      color: red;
+    }
+  }
+}
+
+.button-bar {
+  display: flex;
+  flex-flow: row wrap;
+
+  margin-bottom: 1rem;
+
+  button {
+    margin-right: 0.5rem;
+  }
+
+  .selected {
+    color: red;
+    border-color: red;
+  }
+
+  
+}
+
+.visualizer{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  div {
+    display: flex;
+    flex-flow: row nowrap;
+
+    align-content: center;
+
+    border-radius: 2px;
+    padding: 0.25rem;
+  }
+
+  div:nth-child(even) {
+    background-color: rgb(201, 201, 201);
+  }
+
+  div:hover:not(.head) {
+    background-color: rgb(165, 165, 165);
+    transform: scale(1.01);
+  }
+
+  .head {
+    color: red;
+
+    span {
+      display: flex;
+      flex-flow: column-reverse nowrap;
+      align-items: baseline;
+    }
+  }
+}
+.search-bar {
+  border-radius: 2px;
+  background-color: gainsboro;
+
+  z-index: 100;
+  position: absolute;
+
+  top: 1;
+
+  padding: 0.5rem;
+}
+
+main {
+  padding: 1rem;
+}
