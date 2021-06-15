@@ -4,7 +4,7 @@ module.exports = {
       return [
         {
           source: '/api/:path*',
-          destination: 'http://localhost:5555/:path*',
+          destination: 'http://eqworks-demo-backend.vercel.app/:path*',
         },
       ]
     },
