@@ -5,7 +5,7 @@ import Table from "../components/Table";
 import Map from "../components/Map";
 
 /**
- * 'Points of Interest' page displaying the 'poi' endpoint of the API. Shows a 
+ * 'Points of Interest' page displaying the 'poi' endpoint of the API. Shows a
  * table of points of interests and a map.
  * @returns react component
  */
@@ -24,10 +24,10 @@ export default function poi() {
       })
       .catch((err) => {
         console.error(err);
-        if (err.response.status === 429)
-          alert(
-            "The API is rate limited. Please try again later (in ~5 seconds)."
-          );
+
+        alert(
+          "The API is rate limited. Please try again later (in ~5 seconds)."
+        );
       });
   }, []);
 
