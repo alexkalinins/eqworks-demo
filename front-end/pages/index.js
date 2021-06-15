@@ -40,6 +40,8 @@ data = [
         serverless architecture, since the 'session' is not stored locally but
         on MongoDB. However, if the API is not used frequently enough, the
         entries may be deleted a few seconds after the expiration.
+        <br />
+        {" "}
         <h2>About This Webapp</h2>
         <ul>
           <li>
